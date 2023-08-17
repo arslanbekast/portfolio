@@ -3,15 +3,18 @@ import styled from "styled-components";
 import {Logo} from "../../components/logo/Logo";
 import {Menu} from "../../components/menu/Menu";
 import {Social} from "../../components/social/Social";
+import {FlexWrapper} from "../../components/FlexWrapper";
 
 export const Header = () => {
     return (
         <StyledHeader>
-            <Logo/>
-            <StyledMenuSocialBox>
-                <Menu/>
-                <Social/>
-            </StyledMenuSocialBox>
+            <FlexWrapper justify={'space-between'}>
+                <Logo/>
+                <FlexWrapper justify={'flex-end'} align={'flex-start'}>
+                    <Menu/>
+                    <Social/>
+                </FlexWrapper>
+            </FlexWrapper>
 
         </StyledHeader>
     );
@@ -19,13 +22,4 @@ export const Header = () => {
 
 const StyledHeader = styled.header`
   background-color: #d4ffd3;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-`
-
-const StyledMenuSocialBox = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
 `
