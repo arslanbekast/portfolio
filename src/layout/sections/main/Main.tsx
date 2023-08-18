@@ -1,6 +1,5 @@
 import React from 'react';
-import photoWebp from '../../../assets/images/photo.webp'
-import photoJpeg from '../../../assets/images/photo.jpeg'
+import photo from '../../../assets/images/photo.jpeg'
 import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 
@@ -9,13 +8,13 @@ export const Main = () => {
         <StyledMain>
             <FlexWrapper justify={'space-between'} align={'center'}>
                     <StyledMainText>
-                        Hi 👋,<br/>
-                        My name is<br/>
+                        <span>Hi 👋,</span><br/>
+                        <span>My name is</span><br/>
                         <StyledName>Arslanbek Astemirov</StyledName>
                         <StyledMainTitle>A Front-End Developer</StyledMainTitle>
                     </StyledMainText>
 
-                <StyledPhoto src={photoWebp} alt=""/>
+                <StyledPhoto src={photo} alt=""/>
             </FlexWrapper>
 
         </StyledMain>
@@ -23,6 +22,7 @@ export const Main = () => {
 };
 
 const StyledMain = styled.div`
+  height: 100vh;
   background-color: #fff5e7;
 `
 
