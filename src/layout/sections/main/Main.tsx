@@ -50,7 +50,7 @@ const StyledMainTitle = styled.h1`
 
 const StyledName = styled.span`
   background: var(--gradient-heading, linear-gradient(90deg, #13B0F5 2.60%, #E70FAA 100%));
-  //background-clip: text;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   //font-family: Poppins;
