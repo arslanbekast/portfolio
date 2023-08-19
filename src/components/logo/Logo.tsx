@@ -1,10 +1,20 @@
 import React from "react";
 import logo from '../../assets/images/logo.svg'
+import {Icon} from "../icon/Icon";
 
-export const Logo = () => {
+type LogoPropsType = {
+    section: string
+}
+
+export const Logo = (props: LogoPropsType) => {
     return (
-        <a href="">
-            <img src={logo} alt="logo"/>
+        <a href="#">
+            {
+                props.section === 'header' ?
+                    <img src={logo} alt="logo"/> :
+                    <Icon iconId={'footerLogo'} width={'97'} height={'59'}/>
+            }
+
         </a>
     );
 };
