@@ -1,11 +1,14 @@
 import React from 'react';
 import styled from "styled-components";
+import {Container} from "../../../components/Container";
 
 export const Contact = () => {
     return (
         <StyledContact>
-            <Title>For any questions please mail me:</Title>
-            <Email href={"#"}>astemirow@mail.ru</Email>
+            <Container>
+                <Title>For any questions please mail me:</Title>
+                <Email href={"#"}>astemirow@mail.ru</Email>
+            </Container>
         </StyledContact>
     );
 };
