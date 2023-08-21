@@ -2,11 +2,13 @@ import React from 'react';
 import photo from '../../../assets/images/photo.jpeg'
 import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper";
+import {Container} from "../../../components/Container";
 
 export const Main = () => {
     return (
         <StyledMain>
-            <FlexWrapper justify={'space-between'} align={'center'}>
+            <Container>
+                <FlexWrapper justify={'space-between'} align={'center'}>
                     <StyledMainText>
                         <span>Hi 👋,</span><br/>
                         <span>My name is</span><br/>
@@ -14,8 +16,10 @@ export const Main = () => {
                         <StyledMainTitle>A Front-End Developer</StyledMainTitle>
                     </StyledMainText>
 
-                <StyledPhoto src={photo} alt=""/>
-            </FlexWrapper>
+                    <StyledPhoto src={photo} alt=""/>
+                </FlexWrapper>
+            </Container>
+
 
         </StyledMain>
     );
