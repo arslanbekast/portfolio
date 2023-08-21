@@ -35,6 +35,7 @@ export const Footer = () => {
 };
 
 const StyledFooter = styled.footer`
+  background-color: #9cffe9;
 
 `
 
