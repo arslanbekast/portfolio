@@ -32,6 +32,5 @@ export const Stack = () => {
 };
 
 const StyledStack = styled.section`
-  min-height: 100vh;
   background-color: #ffd889;
 `
