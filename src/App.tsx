@@ -11,22 +11,14 @@ import {Footer} from "./layout/footer/Footer";
 function App() {
     return (
         <div className="App">
-            <StyledContainer>
-                <Header />
-                <Main/>
-                <Stack/>
-                <Projects/>
-                <Contact/>
-                <Footer/>
-            </StyledContainer>
+            <Header />
+            <Main/>
+            <Stack/>
+            <Projects/>
+            <Contact/>
+            <Footer/>
         </div>
     );
 }
 
 export default App;
-
-const StyledContainer = styled.div`
-  width: 100%;
-  max-width: 1193px;
-  margin: 30px auto;
-`
