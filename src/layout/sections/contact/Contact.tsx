@@ -14,7 +14,6 @@ export const Contact = () => {
 };
 
 const StyledContact = styled.section`
-  min-height: 50vh;
   background-color: #77f0ff;
   text-align: center;
 `
