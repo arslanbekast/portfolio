@@ -12,9 +12,9 @@ export const Header = () => {
     return (
         <StyledHeader>
             <Container>
-                <FlexWrapper justify={'space-between'}>
+                <FlexWrapper justify={'space-between'} align={'center'}>
                     <Logo section={'header'}/>
-                    <FlexWrapper justify={'flex-end'} align={'flex-start'}>
+                    <FlexWrapper justify={'flex-end'} align={'center'}>
                         <Menu menuItems={menuItems}/>
                         <Social/>
                     </FlexWrapper>
