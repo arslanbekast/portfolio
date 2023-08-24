@@ -5,6 +5,7 @@ import {FlexWrapper} from "../../components/FlexWrapper";
 import {Social} from "../../components/social/Social";
 import {Menu} from "../../components/menu/Menu";
 import {Container} from "../../components/Container";
+import {theme} from "../../styles/Theme";
 
 const menuItems = ['Home', 'Tech Stack', 'Projects', 'Contact']
 
@@ -25,7 +26,10 @@ export const Footer = () => {
                 </FooterTop>
                 <FooterBottom>
                     <FlexWrapper justify={'space-between'} align={'center'}>
-                        <Menu menuItems={menuItems}/>
+                        <Menu menuItems={menuItems}
+                              fontColor={theme.colors.matteBlue}
+                              fontSize={"18px"}
+                              fontWeight={"400"}/>
                         <Text>Designed and built by <span>Arslanbek Astemirov</span></Text>
                     </FlexWrapper>
                 </FooterBottom>
