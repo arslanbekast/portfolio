@@ -15,8 +15,10 @@ export const Main = () => {
                         <StyledName>Arslanbek Astemirov</StyledName>
                         <StyledMainTitle>A Front-End Developer</StyledMainTitle>
                     </StyledMainText>
+                    <StyledPhotoBox>
+                        <StyledPhoto src={photo} alt=""/>
+                    </StyledPhotoBox>
 
-                    <StyledPhoto src={photo} alt=""/>
                 </FlexWrapper>
             </Container>
 
@@ -30,14 +32,19 @@ const StyledMain = styled.div`
   background-color: #fff5e7;
 `
 
-const StyledPhoto = styled.img`
+const StyledPhotoBox = styled.div`
   width: 350px;
   height: 350px;
-  object-fit: cover;
-  border: 5px solid #E70FAA;
-  //border-image-slice: 1;
-  //border-image-source: linear-gradient(to right, #E70FAA, #00C0FD);
+  border: 5px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to bottom, #E70FAA, #00C0FD);
   border-radius: 50%;
+`
+
+const StyledPhoto = styled.img`
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
 `
 const StyledMainText = styled.div`
   color: #42446E;
