@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import {theme} from "../styles/Theme";
 
 export const SectionText = styled.p`
-  color: var(--dark-content, #666);
+  color: ${theme.colors.grey};
   text-align: center;
   font-size: 32px;
   font-style: normal;

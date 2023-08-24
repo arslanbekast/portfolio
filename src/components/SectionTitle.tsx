@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import {theme} from "../styles/Theme";
 
 export const SectionTitle = styled.h2`
-  color: #42446E;
+  color: ${theme.colors.matteBlue};
   text-align: center;
   font-size: 48px;
   font-style: normal;
