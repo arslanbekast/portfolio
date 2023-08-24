@@ -40,6 +40,7 @@ export const Footer = () => {
 
 const StyledFooter = styled.footer`
   background-color: #9cffe9;
+  padding-top: 100px;
 
 `
 

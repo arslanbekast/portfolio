@@ -9,7 +9,7 @@ export const Main = () => {
     return (
         <StyledMain>
             <Container>
-                <FlexWrapper justify={'space-between'} align={'center'} height={'100%'}>
+                <FlexWrapper justify={'space-between'} align={'center'} wrap={'wrap'} height={'100%'}>
                     <StyledMainText>
                         <span>Hi 👋,</span><br/>
                         <span>My name is</span><br/>

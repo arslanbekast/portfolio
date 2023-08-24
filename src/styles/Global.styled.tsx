@@ -24,4 +24,7 @@ export const GlobalStyle = createGlobalStyle`
   ul {
     list-style: none;
   }
+  section {
+    padding: 100px 0;
+  }
 `
