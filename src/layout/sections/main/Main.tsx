@@ -16,9 +16,7 @@ export const Main = () => {
                         <StyledName>Arslanbek Astemirov</StyledName>
                         <StyledMainTitle>A Front-End Developer</StyledMainTitle>
                     </StyledMainText>
-                    <StyledPhotoBox>
-                        {/*<StyledPhoto src={photo} alt=""/>*/}
-                    </StyledPhotoBox>
+                    <StyledPhotoBox/>
 
                 </FlexWrapper>
             </Container>
@@ -52,11 +50,6 @@ const StyledPhotoBox = styled.div`
     border-radius: 50%;
     z-index: -1;
   }
-`
-
-const StyledPhoto = styled.img`
-  width: 100%;
-  object-fit: cover;
 `
 const StyledMainText = styled.div`
   color: ${theme.colors.matteBlue};
