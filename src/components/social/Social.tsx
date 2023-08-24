@@ -11,17 +11,17 @@ export const Social = (props: SocialPropsType) => {
         <StyledSocial>
             <li>
                 <a href="">
-                    <Icon iconId={props.section==='footer' ? 'footersocgithub' : 'socgithub'} width={'32'} height={'32'} />
+                    <Icon iconId={props.section==='footer' ? 'footersocgithub' : 'socgithub'} width={'30'} height={'30'} />
                 </a>
             </li>
             <li>
                 <a href="">
-                    <Icon iconId={props.section==='footer' ? 'footertwitter' : 'twitter'} width={'32'} height={'32'} />
+                    <Icon iconId={props.section==='footer' ? 'footertwitter' : 'twitter'} width={'31'} height={'31'} />
                 </a>
             </li>
             <li>
                 <a href="">
-                    <Icon iconId={props.section==='footer' ? 'footerlinkedin' : 'linkedin'} width={'32'} height={'32'} />
+                    <Icon iconId={props.section==='footer' ? 'footerlinkedin' : 'linkedin'} width={'30'} height={'30'} />
                 </a>
             </li>
         </StyledSocial>
@@ -42,8 +42,4 @@ const StyledSocial = styled.ul`
   a {
     display: inline-block;
   }
-  path {
-    fill: #42446E;
-  }
-  
 `
