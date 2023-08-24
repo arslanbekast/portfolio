@@ -6,10 +6,12 @@ type FlexWrapperPropsType = {
     align?: string,
     wrap?: string,
     rowGap?: string,
-    columnGap?: string
+    columnGap?: string,
+    height?: string
 }
 
 export const FlexWrapper = styled.div<FlexWrapperPropsType>`
+  height: ${props => props.height || 'auto'};
   display: flex;
   flex-direction: ${props => props.direction || 'row'};
   justify-content: ${props => props.justify || 'flex-start'};
