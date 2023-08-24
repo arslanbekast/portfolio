@@ -12,7 +12,7 @@ export const Stack = () => {
             <Container>
                 <SectionTitle>My Tech Stack</SectionTitle>
                 <SectionText>Technologies I’ve been working with recently</SectionText>
-                <FlexWrapper align={'center'} wrap={'wrap'} rowGap={'80px'} columnGap={'100px'}>
+                <FlexWrapper align={'center'} wrap={'wrap'} rowGap={'80px'} columnGap={'96px'}>
                     <Icon iconId={'html'} />
                     <Icon iconId={'css'} />
                     <Icon iconId={'js'} />
@@ -32,5 +32,5 @@ export const Stack = () => {
 };
 
 const StyledStack = styled.section`
-  background-color: #ffd889;
+  
 `
