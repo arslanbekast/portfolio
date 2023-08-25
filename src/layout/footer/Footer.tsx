@@ -39,25 +39,29 @@ export const Footer = () => {
 };
 
 const StyledFooter = styled.footer`
-  background-color: #9cffe9;
   padding-top: 100px;
 
 `
 
 const FooterTop = styled.div`
-  border-bottom: 3px solid #b4b4b4;
+  border-bottom: 3px solid #66666633;;
   padding: 40px 0;
+  color: ${theme.colors.matteBlue};
+  font-family: DM Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
 `
 
 const FooterBottom = styled.div`
   padding: 45px 0;
 `
 const Phone = styled.a`
-
+  color: ${theme.colors.matteBlue};
 `
 
 const Email = styled.a`
-
+  color: ${theme.colors.matteBlue};
 `
 
 const Text = styled.p`
