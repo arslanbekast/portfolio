@@ -12,6 +12,8 @@ import proj5 from '../../../assets/images/projects/proj5.jpeg'
 import proj6 from '../../../assets/images/projects/proj6.jpeg'
 import {Container} from "../../../components/Container";
 
+
+
 export const Projects = () => {
     return (
         <StyledProjects>
@@ -62,6 +64,5 @@ export const Projects = () => {
 };
 
 const StyledProjects = styled.section`
-  min-height: 100vh;
-  background-color: #64ffb8;
+  
 `
