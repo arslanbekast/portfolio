@@ -12,7 +12,14 @@ import proj5 from '../../../assets/images/projects/proj5.jpeg'
 import proj6 from '../../../assets/images/projects/proj6.jpeg'
 import {Container} from "../../../components/Container";
 
-
+const projectsArr = [
+    {img:proj1,title:'Project Tile goes here',text:'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content',techStack:'HTML , JavaScript, SASS, React'},
+    {img:proj2,title:'Project Tile goes here',text:'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content',techStack:'HTML , JavaScript, SASS, React'},
+    {img:proj3,title:'Project Tile goes here',text:'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content',techStack:'HTML , JavaScript, SASS, React'},
+    {img:proj4,title:'Project Tile goes here',text:'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content',techStack:'HTML , JavaScript, SASS, React'},
+    {img:proj5,title:'Project Tile goes here',text:'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content',techStack:'HTML , JavaScript, SASS, React'},
+    {img:proj6,title:'Project Tile goes here',text:'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content',techStack:'HTML , JavaScript, SASS, React'}
+]
 
 export const Projects = () => {
     return (
@@ -21,42 +28,20 @@ export const Projects = () => {
                 <SectionTitle>Projects</SectionTitle>
                 <SectionText>Things I’ve built so far</SectionText>
                 <FlexWrapper justify={'space-between'} wrap={'wrap'} rowGap={'62px'}>
-                    <Project
-                        imgSrc={proj1}
-                        title={'Project Tile goes here'}
-                        text={'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content'}
-                        techStack={'HTML , JavaScript, SASS, React'}
-                    />
-                    <Project
-                        imgSrc={proj2}
-                        title={'Project Tile goes here'}
-                        text={'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content'}
-                        techStack={'HTML , JavaScript, SASS, React'}
-                    />
-                    <Project
-                        imgSrc={proj3}
-                        title={'Project Tile goes here'}
-                        text={'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content'}
-                        techStack={'HTML , JavaScript, SASS, React'}
-                    />
-                    <Project
-                        imgSrc={proj4}
-                        title={'Project Tile goes here'}
-                        text={'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content'}
-                        techStack={'HTML , JavaScript, SASS, React'}
-                    />
-                    <Project
-                        imgSrc={proj5}
-                        title={'Project Tile goes here'}
-                        text={'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content'}
-                        techStack={'HTML , JavaScript, SASS, React'}
-                    />
-                    <Project
-                        imgSrc={proj6}
-                        title={'Project Tile goes here'}
-                        text={'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content'}
-                        techStack={'HTML , JavaScript, SASS, React'}
-                    />
+                    {
+                        projectsArr.map((item,i)=>{
+                            const {img,title,text,techStack} = item;
+                            return (
+                                <Project
+                                    key={i}
+                                    imgSrc={img}
+                                    title={title}
+                                    text={text}
+                                    techStack={techStack}
+                                />
+                            )
+                        })
+                    }
                 </FlexWrapper>
             </Container>
         </StyledProjects>
