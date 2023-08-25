@@ -5,6 +5,7 @@ import {theme} from "../../styles/Theme";
 type MenuPropsType = {
     menuItems: Array<string>,
     fontColor?: string,
+    hoverColor?: string,
     fontSize?: string,
     fontWeight?: string
 }
@@ -12,6 +13,7 @@ type MenuPropsType = {
 export const Menu = (props: MenuPropsType) => {
     return (
         <StyledMenu fontColor={props.fontColor}
+                    hoverColor={props.hoverColor}
                     fontSize={props.fontSize}
                     fontWeight={props.fontWeight}>
             <ul role={'menu'} aria-label={'Меню'}>
@@ -25,6 +27,7 @@ export const Menu = (props: MenuPropsType) => {
 
 type StyledMenuPropsType = {
     fontColor?: string,
+    hoverColor?: string,
     fontSize?: string,
     fontWeight?: string
 }
@@ -44,6 +47,11 @@ const StyledMenu = styled.nav<StyledMenuPropsType>`
       font-style: normal;
       font-weight: ${props => props.fontWeight || "500"};
       line-height: 26px;
+      transition: .2s;
+      
+      &:hover {
+        color: ${props => props.hoverColor || theme.colors.matteBlue};
+      }
     }
   }
 `

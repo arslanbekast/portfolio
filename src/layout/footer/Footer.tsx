@@ -28,6 +28,7 @@ export const Footer = () => {
                     <FlexWrapper justify={'space-between'} align={'center'}>
                         <Menu menuItems={menuItems}
                               fontColor={theme.colors.matteBlue}
+                              hoverColor={theme.colors.grey}
                               fontSize={"18px"}
                               fontWeight={"400"}/>
                         <Text>Designed and built by <span>Arslanbek Astemirov</span></Text>
