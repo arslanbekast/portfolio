@@ -4,12 +4,13 @@ import {Icon} from "../icon/Icon";
 import {theme} from "../../styles/Theme";
 
 type SocialPropsType = {
-    color?: string
+    color?: string,
+    hoverColor?: string
 }
 
 export const Social = (props: SocialPropsType) => {
     return (
-        <StyledSocial color={props.color}>
+        <StyledSocial color={props.color} hoverColor={props.hoverColor}>
             <li>
                 <a href="">
                     <Icon iconId={'socgithub'} width={'30'} height={'30'} />
@@ -30,7 +31,8 @@ export const Social = (props: SocialPropsType) => {
 };
 
 type StyledSocialPropsType = {
-    color?: string
+    color?: string,
+    hoverColor?: string
 }
 
 const StyledSocial = styled.ul<StyledSocialPropsType>`
@@ -47,5 +49,10 @@ const StyledSocial = styled.ul<StyledSocialPropsType>`
   a {
     display: inline-block;
     color: ${props=>props.color || theme.colors.grey};
+    transition: .2s;
+    
+    &:hover {
+      color: ${props=>props.hoverColor || theme.colors.matteBlue};
+    }
   }
 `

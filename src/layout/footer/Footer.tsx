@@ -19,7 +19,7 @@ export const Footer = () => {
                         <FlexWrapper justify={'space-between'} align={'center'} columnGap={'63px'}>
                             <Phone href={'tel:+79323161334'}>+7(932)316-13-34</Phone>
                             <Email href={'mailto:astemirow@mail.ru'}>astemirow@mail.ru</Email>
-                            <Social color={theme.colors.matteBlue}/>
+                            <Social color={theme.colors.matteBlue} hoverColor={theme.colors.grey}/>
                         </FlexWrapper>
 
                     </FlexWrapper>
@@ -51,17 +51,26 @@ const StyledFooter = styled.footer`
 const FooterTop = styled.div`
   border-bottom: 3px solid #66666633;
   padding: 40px 0;
+  
+  a {
+    color: ${theme.colors.matteBlue};
+    transition: .2s;
+    
+    &:hover {
+      color: ${theme.colors.grey};
+    }
+  }
 `
 
 const FooterBottom = styled.div`
   padding: 45px 0;
 `
 const Phone = styled.a`
-  color: ${theme.colors.matteBlue};
+  
 `
 
 const Email = styled.a`
-  color: ${theme.colors.matteBlue};
+  
 `
 
 const Text = styled.p`
