@@ -19,7 +19,7 @@ export const Footer = () => {
                         <FlexWrapper justify={'space-between'} align={'center'} columnGap={'63px'}>
                             <Phone href={'tel:+79323161334'}>+7(932)316-13-34</Phone>
                             <Email href={'mailto:astemirow@mail.ru'}>astemirow@mail.ru</Email>
-                            <Social section={'footer'}/>
+                            <Social color={theme.colors.matteBlue}/>
                         </FlexWrapper>
 
                     </FlexWrapper>
@@ -40,17 +40,16 @@ export const Footer = () => {
 
 const StyledFooter = styled.footer`
   padding-top: 100px;
-
-`
-
-const FooterTop = styled.div`
-  border-bottom: 3px solid #66666633;;
-  padding: 40px 0;
   color: ${theme.colors.matteBlue};
   font-family: DM Sans;
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
+`
+
+const FooterTop = styled.div`
+  border-bottom: 3px solid #66666633;
+  padding: 40px 0;
 `
 
 const FooterBottom = styled.div`
@@ -65,12 +64,6 @@ const Email = styled.a`
 `
 
 const Text = styled.p`
-  color: var(--dark-content, #666);
-  text-align: center;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 26px;
   
   span {
     background: var(--gradient-heading, linear-gradient(90deg, #13B0F5 2.60%, #E70FAA 100%));
