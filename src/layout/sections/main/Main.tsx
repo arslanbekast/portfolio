@@ -29,6 +29,15 @@ export const Main = () => {
 const StyledMain = styled.div`
   min-height: 100vh;
   display: flex;
+
+  ${FlexWrapper} {
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 150px;
+    }
+  }
 `
 
 const StyledPhotoBox = styled.div`
