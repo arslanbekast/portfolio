@@ -11,7 +11,7 @@ export const GlobalStyle = createGlobalStyle`
   
   * {
     scrollbar-width: thin;
-    scrollbar-color: #666 #42446E;
+    scrollbar-color: #fff #42446E;
   }
 
   *::-webkit-scrollbar
@@ -28,7 +28,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   *::-webkit-scrollbar-thumb {
-    background-color: #666;
+    background-color: #fff;
     border: 3px solid #42446E;
     border-radius: 5px;
   }
