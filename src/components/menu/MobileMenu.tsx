@@ -14,14 +14,14 @@ type MobileMenuPropsType = {
 export const MobileMenu = (props: MobileMenuPropsType) => {
     const [menuOpen, setMenuOpen] = useState(false)
 
-    const onChangedMenu = () => {
+    const onOpenedMenu = () => {
         menuOpen ? setMenuOpen(false) : setMenuOpen(true)
     }
 
     return (
         <StyledMobileMenu>
 
-            <BurgerButton isOpen={menuOpen} onClick={onChangedMenu}>
+            <BurgerButton isOpen={menuOpen} onClick={onOpenedMenu}>
                 <span></span>
             </BurgerButton>
 
