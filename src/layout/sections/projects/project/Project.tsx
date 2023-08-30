@@ -20,7 +20,7 @@ export const Project = (props: ProjectPropsType) => {
                 <Title>{props.title}</Title>
                 <Text>{props.text}</Text>
                 <StackString>Tech stack : <span>{props.techStack}</span></StackString>
-                <FlexWrapper columnGap={'50px'}>
+                <FlexWrapper justify={'space-between'} align={'center'}>
                     <Link href={"#"}>
                         <FlexWrapper align={'center'} columnGap={'10px'}>
                             <Icon iconId={'link'} width={'20'} height={'20'} />
