@@ -18,7 +18,7 @@ export const Menu = (props: MenuPropsType) => {
                     fontWeight={props.fontWeight}>
             <ul role={'menu'} aria-label={'Меню'}>
                 {props.menuItems.map((item, i)=>{
-                    return <li key={i} role={'menuitem'}><a href="">{item}</a></li>
+                    return <li key={i} role={'menuitem'}><a href="#">{item}</a></li>
                 })}
             </ul>
         </StyledMenu>
@@ -52,6 +52,10 @@ const StyledMenu = styled.nav<StyledMenuPropsType>`
       &:hover {
         color: ${props => props.hoverColor || theme.colors.matteBlue};
       }
+    }
+    
+    @media ${theme.media.tablet} {
+      display: none;
     }
   }
 `

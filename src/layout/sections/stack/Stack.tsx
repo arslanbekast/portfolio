@@ -60,4 +60,8 @@ const GridWrapper = styled.div`
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
+  @media screen and (max-width: 576px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
 `

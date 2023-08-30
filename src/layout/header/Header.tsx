@@ -6,6 +6,7 @@ import {Social} from "../../components/social/Social";
 import {FlexWrapper} from "../../components/FlexWrapper";
 import {Container} from "../../components/Container";
 import {theme} from "../../styles/Theme";
+import {MobileMenu} from "../../components/menu/MobileMenu";
 
 const menuItems = ['Home', 'Tech Stack', 'Projects', 'Contact']
 
@@ -18,6 +19,7 @@ export const Header = () => {
                     <FlexWrapper justify={'flex-end'} align={'center'} columnGap={'50px'}>
                         <Menu menuItems={menuItems}/>
                         <Social/>
+                        <MobileMenu menuItems={menuItems}/>
                     </FlexWrapper>
                 </FlexWrapper>
             </Container>
