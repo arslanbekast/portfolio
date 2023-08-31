@@ -4,6 +4,7 @@ import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container";
 import {theme} from "../../../styles/Theme";
+import {font} from "../../../styles/Common";
 
 export const Main = () => {
     return (
@@ -31,7 +32,7 @@ const StyledMain = styled.div`
   display: flex;
 
   ${FlexWrapper} {
-    @media screen and (max-width: 768px) {
+    @media ${theme.media.tablet} {
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -61,14 +62,18 @@ const StyledPhotoBox = styled.div`
   }
 `
 const StyledMainText = styled.div`
-  color: ${theme.colors.matteBlue};
-  font-size: 58px;
-  font-weight: 700;
-  line-height: 70px;
+  
+  ${font({weight: 700, color: theme.colors.matteBlue, lineHeight: "70px", Fmax: 58, Fmin: 38 })}
+  
+  // color: ${theme.colors.matteBlue};
+  // font-size: 58px;
+  // font-weight: 700;
+  // line-height: 70px;
   letter-spacing: -1px;
 `
 const StyledMainTitle = styled.h1`
-  font-size: 58px;
+  ${font({weight: 700, color: theme.colors.matteBlue, lineHeight: "70px", Fmax: 58, Fmin: 38 })}
+  //font-size: 58px;
 `
 
 const StyledName = styled.span`
