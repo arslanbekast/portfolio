@@ -14,7 +14,7 @@ export const Footer = () => {
         <StyledFooter>
             <Container>
                 <FooterTop>
-                    <FlexWrapper justify={'space-between'} align={'center'}>
+                    <FlexWrapper justify={'space-between'} align={'center'} wrap={'wrap'}>
                         <Logo section={'footer'}/>
                         <FlexWrapper justify={'space-between'} align={'center'} columnGap={'63px'}>
                             <Phone href={'tel:+79323161334'}>+7(932)316-13-34</Phone>
@@ -25,7 +25,7 @@ export const Footer = () => {
                     </FlexWrapper>
                 </FooterTop>
                 <FooterBottom>
-                    <FlexWrapper justify={'space-between'} align={'center'}>
+                    <FlexWrapper justify={'space-between'} align={'center'} wrap={'wrap'}>
                         <Menu menuItems={menuItems}
                               fontColor={theme.colors.matteBlue}
                               hoverColor={theme.colors.grey}
@@ -60,10 +60,24 @@ const FooterTop = styled.div`
       color: ${theme.colors.grey};
     }
   }
+  
+  ${FlexWrapper} {
+    @media screen and (max-width: 688px) {
+      justify-content: center;
+      flex-direction: column;
+      row-gap: 20px;
+    }
+  }
 `
 
 const FooterBottom = styled.div`
   padding: 45px 0;
+
+  ${FlexWrapper} {
+    @media screen and (max-width: 812px) {
+      justify-content: center;
+    }
+  }
 `
 const Phone = styled.a`
   
@@ -76,9 +90,14 @@ const Email = styled.a`
 const Text = styled.p`
   
   span {
+    white-space: nowrap;
     background: var(--gradient-heading, linear-gradient(90deg, #13B0F5 2.60%, #E70FAA 100%));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  @media ${theme.media.tablet} {
+    text-align: center;
   }
 `
