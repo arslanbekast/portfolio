@@ -38,7 +38,7 @@ const StyledMain = styled.section`
       gap: 150px;
     }
     @media ${theme.media.mobile} {
-      gap: 100px;
+      gap: 80px;
     }
   }
 `
@@ -62,10 +62,15 @@ const StyledPhotoBox = styled.div`
     border-radius: 50%;
     z-index: -1;
   }
+  
+  @media ${theme.media.mobile} {
+    width: 300px;
+    height: 300px;
+  }
 `
 const StyledMainText = styled.div`
   
-  ${font({weight: 700, color: theme.colors.matteBlue, lineHeight: "70px", Fmax: 58, Fmin: 38 })}
+  ${font({weight: 700, color: theme.colors.matteBlue, lineHeight: "70px", Fmax: 58, Fmin: 28 })}
   
   //color: ${theme.colors.matteBlue};
   // font-size: 58px;
@@ -75,14 +80,14 @@ const StyledMainText = styled.div`
   white-space: nowrap;
   
   @media ${theme.media.mobile} {
-    line-height: 60px;
+    line-height: 50px;
   }
 `
 const StyledMainTitle = styled.h1`
-  ${font({weight: 700, color: theme.colors.matteBlue, lineHeight: "70px", Fmax: 58, Fmin: 38 })}
+  ${font({weight: 700, color: theme.colors.matteBlue, lineHeight: "70px", Fmax: 58, Fmin: 28 })}
   //font-size: 58px;
   @media ${theme.media.mobile} {
-    line-height: 60px;
+    line-height: 50px;
   }
 `
 
