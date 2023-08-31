@@ -2,6 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import {Container} from "../../../components/Container";
 import {theme} from "../../../styles/Theme";
+import {font} from "../../../styles/Common";
 
 export const Contact = () => {
     return (
@@ -15,17 +16,19 @@ export const Contact = () => {
 };
 
 const StyledContact = styled.section`
+  ${font({family:"DM Sans", weight: 700, color: theme.colors.navyBlue, lineHeight: "70px", Fmax: 58, Fmin: 38 })}
   text-align: center;
-  font-family: DM Sans;
-  font-size: 58px;
-  font-weight: 700;
-  line-height: 70px;
+  //font-family: DM Sans;
+  //font-size: 58px;
+  //font-weight: 700;
+  //line-height: 70px;
   letter-spacing: -1px;
 `
 
 const Title = styled.h2`
-  color: ${theme.colors.navyBlue};
-  font-size: 58px;
+  ${font({family:"DM Sans", weight: 700, color: theme.colors.navyBlue, lineHeight: "70px", Fmax: 58, Fmin: 38 })}
+  // color: ${theme.colors.navyBlue};
+  // font-size: 58px;
 `
 
 const Email = styled.a`
