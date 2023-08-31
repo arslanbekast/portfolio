@@ -19,10 +19,18 @@ const StyledContact = styled.section`
   ${font({family:"DM Sans", weight: 700, color: theme.colors.navyBlue, lineHeight: "70px", Fmax: 58, Fmin: 32 })}
   text-align: center;
   letter-spacing: -1px;
+  
+  @media ${theme.media.mobile} {
+    line-height: 50px;
+  }
 `
 
 const Title = styled.h2`
   ${font({family:"DM Sans", weight: 700, color: theme.colors.navyBlue, lineHeight: "70px", Fmax: 58, Fmin: 32 })}
+
+  @media ${theme.media.mobile} {
+    line-height: 50px;
+  }
 `
 
 const Email = styled.a`

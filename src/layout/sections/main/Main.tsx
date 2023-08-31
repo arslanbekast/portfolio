@@ -71,11 +71,7 @@ const StyledPhotoBox = styled.div`
 const StyledMainText = styled.div`
   
   ${font({weight: 700, color: theme.colors.matteBlue, lineHeight: "70px", Fmax: 58, Fmin: 28 })}
-  
-  //color: ${theme.colors.matteBlue};
-  // font-size: 58px;
-  // font-weight: 700;
-  // line-height: 70px;
+
   letter-spacing: -1px;
   white-space: nowrap;
   
@@ -85,7 +81,7 @@ const StyledMainText = styled.div`
 `
 const StyledMainTitle = styled.h1`
   ${font({weight: 700, color: theme.colors.matteBlue, lineHeight: "70px", Fmax: 58, Fmin: 28 })}
-  //font-size: 58px;
+  
   @media ${theme.media.mobile} {
     line-height: 50px;
   }
