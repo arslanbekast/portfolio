@@ -57,6 +57,10 @@ const Image = styled.img`
 const ProjectTextBox = styled.div`
   padding: 25px 30px;
   line-height: 26px;
+  
+  @media ${theme.media.mobile} {
+    padding: 25px;
+  }
 `
 
 const Title = styled.h3`
@@ -64,6 +68,10 @@ const Title = styled.h3`
   font-size: 28px;
   font-weight: 500;
   padding-bottom: 17px;
+
+  @media ${theme.media.mobile} {
+    font-size: 23px;
+  }
 `
 
 const Text = styled.p`
@@ -71,6 +79,10 @@ const Text = styled.p`
   font-size: 18px;
   font-weight: 300;
   padding-bottom: 12px;
+
+  @media ${theme.media.mobile} {
+    font-size: 16px;
+  }
 `
 
 const StackString = styled.p`
@@ -90,4 +102,12 @@ const Link = styled.a`
   font-size: 16px;
   font-weight: 400;
   text-decoration-line: underline;
+  white-space: nowrap;
+  
+  ${FlexWrapper} {
+    @media ${theme.media.mobile} {
+      column-gap: 5px;
+    }
+    
+  }
 `
