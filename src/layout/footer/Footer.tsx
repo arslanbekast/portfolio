@@ -19,7 +19,7 @@ export const Footer = () => {
                         <FlexWrapper justify={'space-between'} align={'center'} columnGap={'63px'}>
                             <Phone href={'tel:+79323161334'}>+7(932)316-13-34</Phone>
                             <Email href={'mailto:astemirow@mail.ru'}>astemirow@mail.ru</Email>
-                            <Social color={theme.colors.matteBlue} hoverColor={theme.colors.grey}/>
+                            <Social color={theme.colors.matteBlue} hoverColor={theme.colors.grey} display={'flex'}/>
                         </FlexWrapper>
 
                     </FlexWrapper>
