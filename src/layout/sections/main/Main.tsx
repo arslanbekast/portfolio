@@ -27,16 +27,18 @@ export const Main = () => {
     );
 };
 
-const StyledMain = styled.div`
+const StyledMain = styled.section`
   min-height: 100vh;
   display: flex;
 
   ${FlexWrapper} {
-    @media ${theme.media.tablet} {
+    @media screen and (max-width: 918px) {
       flex-direction: column;
       justify-content: center;
-      align-items: center;
       gap: 150px;
+    }
+    @media ${theme.media.mobile} {
+      gap: 100px;
     }
   }
 `
@@ -65,15 +67,23 @@ const StyledMainText = styled.div`
   
   ${font({weight: 700, color: theme.colors.matteBlue, lineHeight: "70px", Fmax: 58, Fmin: 38 })}
   
-  // color: ${theme.colors.matteBlue};
+  //color: ${theme.colors.matteBlue};
   // font-size: 58px;
   // font-weight: 700;
   // line-height: 70px;
   letter-spacing: -1px;
+  white-space: nowrap;
+  
+  @media ${theme.media.mobile} {
+    line-height: 60px;
+  }
 `
 const StyledMainTitle = styled.h1`
   ${font({weight: 700, color: theme.colors.matteBlue, lineHeight: "70px", Fmax: 58, Fmin: 38 })}
   //font-size: 58px;
+  @media ${theme.media.mobile} {
+    line-height: 60px;
+  }
 `
 
 const StyledName = styled.span`
