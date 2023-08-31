@@ -50,7 +50,7 @@ export const Projects = () => {
 };
 
 const StyledProjects = styled.section`
-  ${FlexWrapper} {
+  & > ${Container} > ${FlexWrapper} {
     @media ${theme.media.tablet} {
       justify-content: center;
     }
