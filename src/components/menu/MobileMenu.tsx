@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import styled, {css} from "styled-components";
 import {theme} from "../../styles/Theme";
 import {Social} from "../social/Social";
+import {logDOM} from "@testing-library/react";
 
 type MobileMenuPropsType = {
     menuItems: Array<string>,
@@ -17,7 +18,7 @@ export const MobileMenu = (props: MobileMenuPropsType) => {
     const onOpenedMenu = () => {
         menuOpen ? setMenuOpen(false) : setMenuOpen(true)
     }
-
+    console.log(menuOpen)
     return (
         <StyledMobileMenu>
 

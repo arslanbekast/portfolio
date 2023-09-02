@@ -28,7 +28,7 @@ export const Projects = () => {
             <Container>
                 <SectionTitle>Projects</SectionTitle>
                 <SectionText>Things I’ve built so far</SectionText>
-                <FlexWrapper justify={'space-between'} wrap={'wrap'} rowGap={'62px'}>
+                <FlexWrapper justify={'center'} wrap={'wrap'} rowGap={'62px'} columnGap={'19px'}>
                     {
                         projectsArr.map((item,i)=>{
                             const {img,title,text,techStack} = item;
