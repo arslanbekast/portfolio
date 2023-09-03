@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from "styled-components";
 import {theme} from "../../styles/Theme";
+import {Menu} from "./Menu";
 
-type MenuPropsType = {
+type DesktopMenuPropsType = {
     menuItems: Array<string>,
     fontColor?: string,
     hoverColor?: string,
@@ -10,52 +11,20 @@ type MenuPropsType = {
     fontWeight?: string
 }
 
-export const DesktopMenu = (props: MenuPropsType) => {
+export const DesktopMenu: React.FC<DesktopMenuPropsType> = (props: DesktopMenuPropsType) => {
     return (
-        <StyledMenu fontColor={props.fontColor}
-                    hoverColor={props.hoverColor}
-                    fontSize={props.fontSize}
-                    fontWeight={props.fontWeight}>
-            <ul role={'menu'} aria-label={'Меню'}>
-                {props.menuItems.map((item, i)=>{
-                    return <li key={i} role={'menuitem'}><a href="#">{item}</a></li>
-                })}
-            </ul>
-        </StyledMenu>
+        <StyledDesktopMenu>
+            <Menu menuItems={props.menuItems}
+                  fontColor={props.fontColor}
+                  hoverColor={props.hoverColor}
+                  fontSize={props.fontSize}
+                  fontWeight={props.fontWeight}/>
+        </StyledDesktopMenu>
     );
 };
 
-type StyledMenuPropsType = {
-    fontColor?: string,
-    hoverColor?: string,
-    fontSize?: string,
-    fontWeight?: string
-}
-
-const StyledMenu = styled.nav<StyledMenuPropsType>`
-  ul {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 50px;
-    
-    
-    a {
-      color: ${props => props.fontColor || theme.colors.grey};
-      font-family: DM Sans;
-      font-size: ${props => props.fontSize || "20px"};
-      font-style: normal;
-      font-weight: ${props => props.fontWeight || "500"};
-      line-height: 26px;
-      transition: .2s;
-      
-      &:hover {
-        color: ${props => props.hoverColor || theme.colors.matteBlue};
-      }
-    }
-    
-    @media ${theme.media.tablet} {
-      display: none;
-    }
+const StyledDesktopMenu = styled.nav`
+  @media ${theme.media.mobile} {
+    display: none;
   }
 `
