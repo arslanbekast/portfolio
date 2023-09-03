@@ -50,9 +50,5 @@ export const Projects = () => {
 };
 
 const StyledProjects = styled.section`
-  & > ${Container} > ${FlexWrapper} {
-    @media ${theme.media.tablet} {
-      justify-content: center;
-    }
-  }
+  
 `
