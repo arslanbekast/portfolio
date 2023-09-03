@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from "styled-components";
 import {SectionTitle} from "../../../components/SectionTitle";
 import {SectionText} from "../../../components/SectionText";
 import {FlexWrapper} from "../../../components/FlexWrapper";
@@ -11,7 +10,7 @@ import proj4 from '../../../assets/images/projects/proj4.jpeg'
 import proj5 from '../../../assets/images/projects/proj5.jpeg'
 import proj6 from '../../../assets/images/projects/proj6.jpeg'
 import {Container} from "../../../components/Container";
-import {theme} from "../../../styles/Theme";
+import {S} from './Projects_Styles'
 
 const projectsArr = [
     {img:proj1,title:'Project Tile goes here',text:'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content',techStack:'HTML , JavaScript, SASS, React'},
@@ -22,9 +21,9 @@ const projectsArr = [
     {img:proj6,title:'Project Tile goes here',text:'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content',techStack:'HTML , JavaScript, SASS, React'}
 ]
 
-export const Projects = () => {
+export const Projects: React.FC = () => {
     return (
-        <StyledProjects>
+        <S.Projects>
             <Container>
                 <SectionTitle>Projects</SectionTitle>
                 <SectionText>Things I’ve built so far</SectionText>
@@ -45,10 +44,7 @@ export const Projects = () => {
                     }
                 </FlexWrapper>
             </Container>
-        </StyledProjects>
+        </S.Projects>
     );
 };
 
-const StyledProjects = styled.section`
-  
-`

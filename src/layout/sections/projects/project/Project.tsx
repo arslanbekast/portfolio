@@ -1,8 +1,7 @@
 import React from 'react';
-import styled from "styled-components";
 import {Icon} from "../../../../components/icon/Icon";
 import {FlexWrapper} from "../../../../components/FlexWrapper";
-import {theme} from "../../../../styles/Theme";
+import {S} from '../Projects_Styles'
 
 type ProjectPropsType = {
     title: string,
@@ -12,102 +11,30 @@ type ProjectPropsType = {
 }
 
 
-export const Project = (props: ProjectPropsType) => {
+export const Project: React.FC<ProjectPropsType> = (props: ProjectPropsType) => {
     return (
-        <StyledProject>
-            <Image src={props.imgSrc} alt=""/>
-            <ProjectTextBox>
-                <Title>{props.title}</Title>
-                <Text>{props.text}</Text>
-                <StackString>Tech stack : <span>{props.techStack}</span></StackString>
+        <S.Project>
+            <S.Image src={props.imgSrc} alt=""/>
+            <S.ProjectTextBox>
+                <S.Title>{props.title}</S.Title>
+                <S.Text>{props.text}</S.Text>
+                <S.StackString>Tech stack : <span>{props.techStack}</span></S.StackString>
                 <FlexWrapper justify={'space-between'} align={'center'}>
-                    <Link href={"#"}>
+                    <S.Link href={"#"}>
                         <FlexWrapper align={'center'} columnGap={'10px'}>
                             <Icon iconId={'link'} width={'20'} height={'20'} />
                             <span>Live Preview</span>
                         </FlexWrapper>
-                    </Link>
-                    <Link href={"#"}>
+                    </S.Link>
+                    <S.Link href={"#"}>
                         <FlexWrapper align={'center'} columnGap={'10px'}>
                             <Icon iconId={'projgithub'} width={'20'} height={'20'} />
                             <span>View Code</span>
                         </FlexWrapper>
-                    </Link>
+                    </S.Link>
                 </FlexWrapper>
-            </ProjectTextBox>
-        </StyledProject>
+            </S.ProjectTextBox>
+        </S.Project>
     );
 };
 
-const StyledProject = styled.div`
-  background-color: #fff;
-  width: 100%;
-  max-width: 375px;
-  border-radius: 20px;
-  box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.20);
-  overflow: hidden;
-`
-
-const Image = styled.img`
-  width: 100%;
-  height: 260px;
-  object-fit: cover;
-`
-
-const ProjectTextBox = styled.div`
-  padding: 25px 30px;
-  line-height: 26px;
-  
-  @media ${theme.media.mobile} {
-    padding: 25px;
-  }
-`
-
-const Title = styled.h3`
-  color: ${theme.colors.black};
-  font-size: 28px;
-  font-weight: 500;
-  padding-bottom: 17px;
-
-  @media ${theme.media.mobile} {
-    font-size: 23px;
-  }
-`
-
-const Text = styled.p`
-  color: ${theme.colors.grey};
-  font-size: 18px;
-  font-weight: 300;
-  padding-bottom: 12px;
-
-  @media ${theme.media.mobile} {
-    font-size: 16px;
-  }
-`
-
-const StackString = styled.p`
-  color: ${theme.colors.matteBlue};
-  font-size: 16px;
-  font-weight: 400;
-  padding-bottom: 20px;
-  
-  span {
-    font-size: 14px;
-    font-weight: 300;
-  }
-`
-
-const Link = styled.a`
-  color: ${theme.colors.black};
-  font-size: 16px;
-  font-weight: 400;
-  text-decoration-line: underline;
-  white-space: nowrap;
-  
-  ${FlexWrapper} {
-    @media ${theme.media.mobile} {
-      column-gap: 5px;
-    }
-    
-  }
-`
