@@ -6,7 +6,7 @@ type LogoPropsType = {
     section: string
 }
 
-export const Logo = (props: LogoPropsType) => {
+export const Logo: React.FC<LogoPropsType> = (props: LogoPropsType) => {
     return (
         <a href="#">
             {
