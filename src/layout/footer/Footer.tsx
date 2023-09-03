@@ -74,10 +74,13 @@ const FooterBottom = styled.div`
   padding: 45px 0;
 
   ${FlexWrapper} {
-    @media screen and (max-width: 812px) {
+    @media screen and (max-width: 850px) {
+      flex-direction: column;
       justify-content: center;
+      row-gap: 20px;
     }
   }
+  
 `
 const Phone = styled.a`
   
