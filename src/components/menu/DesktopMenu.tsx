@@ -1,7 +1,6 @@
 import React from 'react';
-import styled from "styled-components";
-import {theme} from "../../styles/Theme";
 import {Menu} from "./Menu";
+import {S} from './Menu_Styles'
 
 type DesktopMenuPropsType = {
     menuItems: Array<string>,
@@ -13,18 +12,13 @@ type DesktopMenuPropsType = {
 
 export const DesktopMenu: React.FC<DesktopMenuPropsType> = (props: DesktopMenuPropsType) => {
     return (
-        <StyledDesktopMenu>
+        <S.DesktopMenu>
             <Menu menuItems={props.menuItems}
                   fontColor={props.fontColor}
                   hoverColor={props.hoverColor}
                   fontSize={props.fontSize}
                   fontWeight={props.fontWeight}/>
-        </StyledDesktopMenu>
+        </S.DesktopMenu>
     );
 };
 
-const StyledDesktopMenu = styled.nav`
-  @media ${theme.media.mobile} {
-    //display: none;
-  }
-`
