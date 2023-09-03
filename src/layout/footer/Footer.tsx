@@ -3,7 +3,7 @@ import styled from "styled-components";
 import {Logo} from "../../components/logo/Logo";
 import {FlexWrapper} from "../../components/FlexWrapper";
 import {Social} from "../../components/social/Social";
-import {Menu} from "../../components/menu/Menu";
+import {DesktopMenu} from "../../components/menu/DesktopMenu";
 import {Container} from "../../components/Container";
 import {theme} from "../../styles/Theme";
 
@@ -26,11 +26,11 @@ export const Footer = () => {
                 </FooterTop>
                 <FooterBottom>
                     <FlexWrapper justify={'space-between'} align={'center'} wrap={'wrap'}>
-                        <Menu menuItems={menuItems}
-                              fontColor={theme.colors.matteBlue}
-                              hoverColor={theme.colors.grey}
-                              fontSize={"18px"}
-                              fontWeight={"400"}/>
+                        <DesktopMenu menuItems={menuItems}
+                                     fontColor={theme.colors.matteBlue}
+                                     hoverColor={theme.colors.grey}
+                                     fontSize={"18px"}
+                                     fontWeight={"400"}/>
                         <Text>Designed and built by <span>Arslanbek Astemirov</span></Text>
                     </FlexWrapper>
                 </FooterBottom>
