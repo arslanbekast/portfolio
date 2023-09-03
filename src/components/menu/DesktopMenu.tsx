@@ -10,7 +10,7 @@ type MenuPropsType = {
     fontWeight?: string
 }
 
-export const Menu = (props: MenuPropsType) => {
+export const DesktopMenu = (props: MenuPropsType) => {
     return (
         <StyledMenu fontColor={props.fontColor}
                     hoverColor={props.hoverColor}
