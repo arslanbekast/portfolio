@@ -26,9 +26,8 @@ export const Header: React.FC = () => {
                 <FlexWrapper justify={'space-between'} align={'center'}>
                     <Logo section={'header'}/>
                     <FlexWrapper justify={'flex-end'} align={'center'} columnGap={'50px'}>
-                        {
-                            width > breakpoint ? <DesktopMenu menuItems={menuItems}/> : <MobileMenu menuItems={menuItems}/>
-                        }
+                        {width > breakpoint ? <DesktopMenu menuItems={menuItems}/> :
+                                              <MobileMenu menuItems={menuItems}/>}
                         <Social/>
                     </FlexWrapper>
                 </FlexWrapper>
