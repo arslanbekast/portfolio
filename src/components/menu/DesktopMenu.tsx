@@ -25,6 +25,6 @@ export const DesktopMenu: React.FC<DesktopMenuPropsType> = (props: DesktopMenuPr
 
 const StyledDesktopMenu = styled.nav`
   @media ${theme.media.mobile} {
-    display: none;
+    //display: none;
   }
 `

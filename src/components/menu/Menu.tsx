@@ -36,6 +36,11 @@ const MenuList = styled.ul<MenuListPropsType>`
   justify-content: flex-start;
   align-items: center;
   gap: 50px;
+
+  @media ${theme.media.mobile} {
+    flex-direction: column;
+    gap: 5px;
+  }
   
   a {
       color: ${props => props.fontColor || theme.colors.grey};
