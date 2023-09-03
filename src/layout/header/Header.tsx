@@ -1,38 +1,29 @@
 import React from 'react';
 import styled from "styled-components";
 import {Logo} from "../../components/logo/Logo";
-import {Menu} from "../../components/menu/Menu";
+import {DesktopMenu} from "../../components/menu/DesktopMenu";
 import {Social} from "../../components/social/Social";
 import {FlexWrapper} from "../../components/FlexWrapper";
 import {Container} from "../../components/Container";
-import {theme} from "../../styles/Theme";
 import {MobileMenu} from "../../components/menu/MobileMenu";
+import {S} from './Header_Styles'
 
 const menuItems = ['Home', 'Tech Stack', 'Projects', 'Contact']
 
-export const Header = () => {
+export const Header: React.FC = () => {
     return (
-        <StyledHeader>
+        <S.Header>
             <Container>
                 <FlexWrapper justify={'space-between'} align={'center'}>
                     <Logo section={'header'}/>
                     <FlexWrapper justify={'flex-end'} align={'center'} columnGap={'50px'}>
-                        <Menu menuItems={menuItems}/>
+                        <DesktopMenu menuItems={menuItems}/>
                         <Social/>
                         <MobileMenu menuItems={menuItems}/>
                     </FlexWrapper>
                 </FlexWrapper>
             </Container>
-        </StyledHeader>
+        </S.Header>
     );
 };
 
-const StyledHeader = styled.header`
-  background-color: ${theme.colors.primaryBg};
-  padding: 20px 0;
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  z-index: 99999;
-`
