@@ -57,7 +57,11 @@ const MainText = styled.div`
   }
 `
 const MainTitle = styled.h1`
-  ${font({weight: 700, color: theme.colors.matteBlue, lineHeight: "70px", Fmax: 58, Fmin: 28 })}
+  ${font({weight: 700, color: theme.colors.matteBlue, lineHeight: "70px", Fmax: 58, Fmin: 28 })};
+  
+  p {
+    display: none;
+  }
   
   @media ${theme.media.mobile} {
     line-height: 50px;
