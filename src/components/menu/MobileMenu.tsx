@@ -8,7 +8,7 @@ type MobileMenuPropsType = {
     menuItems: Array<string>
 }
 
-export const MobileMenu: React.FC<MobileMenuPropsType> = (props: MobileMenuPropsType) => {
+export const MobileMenu: React.FC = () => {
     const [menuOpen, setMenuOpen] = useState(false)
 
     const onOpenedMenu = () => {
@@ -22,7 +22,7 @@ export const MobileMenu: React.FC<MobileMenuPropsType> = (props: MobileMenuProps
             </S.BurgerButton>
 
             <S.MobileMenuPopup isOpen={menuOpen}>
-                <Menu menuItems={props.menuItems}/>
+                <Menu />
                 <Social display={'flex'} color={theme.colors.mobileMenu}/>
             </S.MobileMenuPopup>
         </S.MobileMenu>

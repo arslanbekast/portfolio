@@ -7,8 +7,6 @@ import {Container} from "../../components/Container";
 import {theme} from "../../styles/Theme";
 import {S} from './Footer_Styles'
 
-const menuItems = ['Home', 'Tech Stack', 'Projects', 'Contact']
-
 export const Footer: React.FC = () => {
     return (
         <S.Footer>
@@ -26,8 +24,7 @@ export const Footer: React.FC = () => {
                 </S.FooterTop>
                 <S.FooterBottom>
                     <FlexWrapper justify={'space-between'} align={'center'} wrap={'wrap'}>
-                        <DesktopMenu menuItems={menuItems}
-                                     fontColor={theme.colors.matteBlue}
+                        <DesktopMenu fontColor={theme.colors.matteBlue}
                                      hoverColor={theme.colors.grey}
                                      fontSize={"18px"}
                                      fontWeight={"400"}/>

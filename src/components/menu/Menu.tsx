@@ -2,12 +2,13 @@ import React from 'react';
 import {S} from './Menu_Styles'
 
 type MenuPropsType = {
-    menuItems: Array<string>
     fontColor?: string,
     hoverColor?: string,
     fontSize?: string,
     fontWeight?: string
 }
+
+const menuItems = ['Home', 'Tech Stack', 'Projects', 'Contact']
 
 export const Menu: React.FC<MenuPropsType> = (props:MenuPropsType) => {
     return (
@@ -16,7 +17,7 @@ export const Menu: React.FC<MenuPropsType> = (props:MenuPropsType) => {
                   hoverColor={props.hoverColor}
                   fontSize={props.fontSize}
                   fontWeight={props.fontWeight}>
-            {props.menuItems.map((item, i)=>{
+            {menuItems.map((item, i)=>{
                 return <li key={i} role={'menuitem'}><a href="#">{item}</a></li>
             })}
         </S.MenuList>
