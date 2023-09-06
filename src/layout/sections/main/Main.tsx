@@ -3,6 +3,7 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container";
 import {S} from './Main_Styles'
 import Typewriter from 'typewriter-effect';
+import Tilt from 'react-parallax-tilt';
 
 export const Main: React.FC = () => {
     return (
@@ -26,7 +27,16 @@ export const Main: React.FC = () => {
                             />
                         </S.MainTitle>
                     </S.MainText>
-                    <S.PhotoBox/>
+                    <Tilt
+                        className="parallax-effect-img"
+                        tiltMaxAngleX={40}
+                        tiltMaxAngleY={40}
+                        perspective={800}
+                        transitionSpeed={1500}
+                        scale={1.1}
+                        gyroscope={true}>
+                        <S.PhotoBox/>
+                    </Tilt>
                 </FlexWrapper>
             </Container>
         </S.Main>
