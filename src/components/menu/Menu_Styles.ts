@@ -1,15 +1,16 @@
 import styled, {css} from "styled-components";
 import {theme} from "../../styles/Theme";
+import {Link} from "react-scroll";
 
 // Menu
-type MenuListPropsType = {
+type MenuLinkPropsType = {
     fontColor?: string,
     hoverColor?: string,
     fontSize?: string,
     fontWeight?: string
 }
 
-const MenuList = styled.ul<MenuListPropsType>`
+const MenuList = styled.ul`
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -19,19 +20,20 @@ const MenuList = styled.ul<MenuListPropsType>`
     flex-direction: column;
     gap: 5px;
   }
-  
-  a {
-      color: ${props => props.fontColor || theme.colors.grey};
-      font-family: DM Sans;
-      font-size: ${props => props.fontSize || "20px"};
-      font-weight: ${props => props.fontWeight || "500"};
-      line-height: 26px;
-      transition: .2s;
-      
-      &:hover {
-        color: ${props => props.hoverColor || theme.colors.matteBlue};
-      }
-    }
+`
+
+const MenuLink = styled(Link)<MenuLinkPropsType>`
+  color: ${props => props.fontColor || theme.colors.grey};
+  font-family: DM Sans;
+  font-size: ${props => props.fontSize || "20px"};
+  font-weight: ${props => props.fontWeight || "500"};
+  line-height: 26px;
+  transition: .2s;
+  cursor: pointer;
+
+  &:hover, &.active {
+    color: ${props => props.hoverColor || theme.colors.matteBlue};
+  }
 `
 // Desktop menu
 const DesktopMenu = styled.nav`
@@ -140,6 +142,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
 
 export const S = {
     MenuList,
+    MenuLink,
     DesktopMenu,
     MobileMenu,
     MobileMenuPopup,

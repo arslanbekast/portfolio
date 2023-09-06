@@ -22,7 +22,7 @@ const techStackArr = [
 
 export const Stack: React.FC = () => {
     return (
-        <S.Stack>
+        <S.Stack id={"techStack"}>
             <Container>
                 <SectionTitle>My Tech Stack</SectionTitle>
                 <SectionText>Technologies I’ve been working with recently</SectionText>
