@@ -12,7 +12,7 @@ export const MobileMenu: React.FC<MobileMenuPropsType> = (props: MobileMenuProps
     const [menuOpen, setMenuOpen] = useState(false)
 
     const onOpenedMenu = () => {
-        menuOpen ? setMenuOpen(false) : setMenuOpen(true)
+        setMenuOpen(!menuOpen)
     }
     console.log(menuOpen)
     return (
