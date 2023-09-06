@@ -2,7 +2,8 @@ import styled from "styled-components";
 import {theme} from "../../../styles/Theme";
 
 const Stack = styled.section`
-  
+  position: relative;
+  background-color: ${theme.colors.primaryBg};
 `
 
 const GridWrapper = styled.div`
@@ -13,7 +14,7 @@ const GridWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   row-gap: 95px;
-  
+
   @media ${theme.media.tablet} {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);

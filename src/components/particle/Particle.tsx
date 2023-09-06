@@ -19,11 +19,11 @@ export const Particle = () => {
             init={particlesInit}
             loaded={particlesLoaded}
             options={{
-                background: {
-                    color: {
-                        value: "#0d47a1",
-                    },
-                },
+                // background: {
+                //     color: {
+                //         value: "transparent",
+                //     },
+                // },
                 fpsLimit: 120,
                 interactivity: {
                     events: {
@@ -49,10 +49,10 @@ export const Particle = () => {
                 },
                 particles: {
                     color: {
-                        value: "#ffffff",
+                        value: "#8287eb",
                     },
                     links: {
-                        color: "#ffffff",
+                        color: "#8287eb",
                         distance: 150,
                         enable: true,
                         opacity: 0.5,
@@ -65,13 +65,13 @@ export const Particle = () => {
                             default: "bounce",
                         },
                         random: false,
-                        speed: 6,
+                        speed: 2,
                         straight: false,
                     },
                     number: {
                         density: {
                             enable: true,
-                            area: 800,
+                            area: 1000,
                         },
                         value: 80,
                     },
@@ -82,7 +82,7 @@ export const Particle = () => {
                         type: "circle",
                     },
                     size: {
-                        value: { min: 1, max: 5 },
+                        value: { min: 0.2, max: 1 },
                     },
                 },
                 detectRetina: true,

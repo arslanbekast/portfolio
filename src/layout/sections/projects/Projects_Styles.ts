@@ -3,7 +3,8 @@ import {theme} from "../../../styles/Theme";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 
 const Projects = styled.section`
-  
+  position: relative;
+  background-color: ${theme.colors.primaryBg};
 `
 
 const Project = styled.div`
