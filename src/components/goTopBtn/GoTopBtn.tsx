@@ -37,4 +37,9 @@ const StyledGoTopBtn = styled.button`
   position: fixed;
   bottom: 30px;
   right: 30px;
+  transition: .2s;
+  
+  &:hover {
+    transform: scale(1.2);
+  }
 `
