@@ -1,9 +1,18 @@
 import styled from "styled-components";
 import {theme} from "../../../styles/Theme";
+import {Icon} from "../../../components/icon/Icon";
 
 const Stack = styled.section`
   position: relative;
   background-color: ${theme.colors.primaryBg};
+  
+  svg {
+    transition: .2s;
+    
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
 `
 
 const GridWrapper = styled.div`
