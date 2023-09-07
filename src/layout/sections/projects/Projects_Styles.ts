@@ -71,12 +71,16 @@ const Link = styled.a`
   font-weight: 400;
   text-decoration-line: underline;
   white-space: nowrap;
+  transition: .2s;
   
   ${FlexWrapper} {
     @media ${theme.media.mobile} {
       column-gap: 5px;
     }
-    
+  }
+  
+  &:hover {
+    color: ${theme.colors.matteBlue};
   }
 `
 
