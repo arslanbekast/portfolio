@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container";
 import {S} from './Main_Styles'
@@ -7,6 +7,16 @@ import Tilt from 'react-parallax-tilt';
 import {Zoom} from "react-awesome-reveal";
 
 export const Main: React.FC = () => {
+
+    const [width, setWidth] = useState(window.innerWidth);
+    const breakpoint = 576;
+
+    useEffect(() => {
+        const handleWindowResize = () => setWidth(window.innerWidth);
+        window.addEventListener("resize", handleWindowResize);
+        return () => window.removeEventListener("resize", handleWindowResize);
+    }, [])
+
     return (
         <S.Main id={"home"}>
             <Container>
@@ -16,12 +26,11 @@ export const Main: React.FC = () => {
                             <span>Hi 👋,</span><br/>
                             <span>My name is</span><br/>
                             <S.Name>Arslanbek Astemirov</S.Name>
-                            {/*<S.MainTitle>A Front-End Developer</S.MainTitle>*/}
                             <S.MainTitle>
                                 <p>A Frontend Developer</p>
                                 <Typewriter
                                     options={{
-                                        strings: ['A Frontend Developer.'],
+                                        strings: ['A Frontend Developer'],
                                         autoStart: true,
                                         loop: true,
                                         delay: 50
@@ -29,17 +38,18 @@ export const Main: React.FC = () => {
                                 />
                             </S.MainTitle>
                         </S.MainText>
-                        {/*<Tilt*/}
-                        {/*    className="parallax-effect-img"*/}
-                        {/*    tiltMaxAngleX={40}*/}
-                        {/*    tiltMaxAngleY={40}*/}
-                        {/*    perspective={800}*/}
-                        {/*    transitionSpeed={1500}*/}
-                        {/*    scale={1}*/}
-                        {/*    gyroscope={true}>*/}
-                        {/*    <S.PhotoBox/>*/}
-                        {/*</Tilt>*/}
-                        <S.PhotoBox/>
+
+                        <Tilt
+                            className="parallax-effect-img"
+                            tiltMaxAngleX={40}
+                            tiltMaxAngleY={40}
+                            perspective={800}
+                            transitionSpeed={1500}
+                            scale={1}
+                            gyroscope={true}
+                            tiltEnable={ width > breakpoint ? true : false }>
+                            <S.PhotoBox/>
+                        </Tilt>
                     </Zoom>
                 </FlexWrapper>
             </Container>
