@@ -35,7 +35,7 @@ export const Main: React.FC = () => {
                             tiltMaxAngleY={40}
                             perspective={800}
                             transitionSpeed={1500}
-                            scale={1.1}
+                            scale={1}
                             gyroscope={true}>
                             <S.PhotoBox/>
                         </Tilt>
