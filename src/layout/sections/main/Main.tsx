@@ -29,16 +29,17 @@ export const Main: React.FC = () => {
                                 />
                             </S.MainTitle>
                         </S.MainText>
-                        <Tilt
-                            className="parallax-effect-img"
-                            tiltMaxAngleX={40}
-                            tiltMaxAngleY={40}
-                            perspective={800}
-                            transitionSpeed={1500}
-                            scale={1}
-                            gyroscope={true}>
-                            <S.PhotoBox/>
-                        </Tilt>
+                        {/*<Tilt*/}
+                        {/*    className="parallax-effect-img"*/}
+                        {/*    tiltMaxAngleX={40}*/}
+                        {/*    tiltMaxAngleY={40}*/}
+                        {/*    perspective={800}*/}
+                        {/*    transitionSpeed={1500}*/}
+                        {/*    scale={1}*/}
+                        {/*    gyroscope={true}>*/}
+                        {/*    <S.PhotoBox/>*/}
+                        {/*</Tilt>*/}
+                        <S.PhotoBox/>
                     </Zoom>
                 </FlexWrapper>
             </Container>
