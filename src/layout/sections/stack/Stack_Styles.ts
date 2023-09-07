@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import {theme} from "../../../styles/Theme";
-import {Icon} from "../../../components/icon/Icon";
 
 const Stack = styled.section`
   position: relative;
