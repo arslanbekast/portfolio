@@ -1,6 +1,5 @@
 import React from 'react';
-import {S} from './Menu_Styles'
-import {Link} from "react-scroll";
+import {S} from './Menu_Styles';
 
 type MenuPropsType = {
     fontColor?: string,
