@@ -20,7 +20,7 @@ export const Social: React.FC<SocialPropsType> = (props: SocialPropsType) => {
             {
                 socialData.map((item,i) => {
                     return (
-                        <li>
+                        <li key={i}>
                             <a href="">
                                 <Icon iconId={item.iconId} width={'31'} height={'31'} />
                             </a>
