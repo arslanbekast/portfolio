@@ -29,7 +29,7 @@ export const Projects: React.FC = () => {
                 <SectionTitle>Projects</SectionTitle>
                 <SectionText>Things I’ve built so far</SectionText>
                 <FlexWrapper justify={'center'} wrap={'wrap'} rowGap={'62px'} columnGap={'19px'}>
-                    <Zoom cascade={true} damping={0.1}>
+                    <Zoom cascade={true} damping={0.05}>
                     {
                         projectsArr.map((item,i)=>{
                             const {img,title,text,techStack} = item;
