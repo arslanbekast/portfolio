@@ -29,7 +29,7 @@ export const Stack: React.FC = () => {
                 <SectionTitle>My Tech Stack</SectionTitle>
                 <SectionText>Technologies I’ve been working with recently</SectionText>
                 <S.GridWrapper>
-                    <Bounce cascade={true} damping={0.1}>
+                    <Bounce cascade={true} damping={0.05}>
                     {
                         techStackArr.map((item,i)=>{
                             const {icon, width, height} = item;
