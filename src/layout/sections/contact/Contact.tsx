@@ -7,7 +7,7 @@ export const Contact: React.FC = () => {
     return (
         <S.Contact id={"contact"}>
             <Container>
-                <JackInTheBox cascade={true} damping={0.1}>
+                <JackInTheBox cascade={true} damping={0.05}>
                     <S.Title>For any questions please mail me:</S.Title>
                     <S.Email href={"#"}>astemirow@mail.ru</S.Email>
                 </JackInTheBox>
