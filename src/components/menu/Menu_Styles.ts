@@ -54,13 +54,15 @@ const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
   bottom: 0;
   z-index: 99999;
   background-color: rgba(31, 31, 31, 0.96);
-  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: translateY(-100%);
+  transition: .5s ease-in-out;
 
   ${props => props.isOpen && css<{ isOpen: boolean }>`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    transform: translateY(0);
   `}
   
   ul:first-child {
