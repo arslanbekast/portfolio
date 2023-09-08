@@ -9,9 +9,9 @@ type SocialPropsType = {
 }
 
 const socialData = [
-    {iconId: "socgithub"},
-    {iconId: "twitter"},
-    {iconId: "linkedin"},
+    {iconId: "socgithub", href:"https://github.com/arslanbekast"},
+    {iconId: "twitter", href:"https://twitter.com"},
+    {iconId: "linkedin",  href:"https://www.linkedin.com/in/arslanbek-astemirov"},
 ]
 
 export const Social: React.FC<SocialPropsType> = (props: SocialPropsType) => {
@@ -21,7 +21,7 @@ export const Social: React.FC<SocialPropsType> = (props: SocialPropsType) => {
                 socialData.map((item,i) => {
                     return (
                         <li key={i}>
-                            <a href="">
+                            <a href={item.href} target="_blank">
                                 <Icon iconId={item.iconId} width={'31'} height={'31'} />
                             </a>
                         </li>
