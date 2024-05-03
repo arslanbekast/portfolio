@@ -11,7 +11,7 @@ const Project = styled.div`
   background-color: #fff;
   width: 100%;
   max-width: 375px;
-  border-radius: 20px;
+  border-radius: 10px;
   box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.20);
   overflow: hidden;
 `
