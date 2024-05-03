@@ -7,7 +7,9 @@ type ProjectPropsType = {
     title: string,
     text: string,
     imgSrc: string,
-    techStack: string
+    techStack: string,
+    linkPreview: string,
+    linkCode: string
 }
 
 
@@ -20,13 +22,13 @@ export const Project: React.FC<ProjectPropsType> = (props: ProjectPropsType) => 
                 <S.Text>{props.text}</S.Text>
                 <S.StackString>Tech stack : <span>{props.techStack}</span></S.StackString>
                 <FlexWrapper justify={'space-between'} align={'center'}>
-                    <S.Link href={"#"}>
+                    <S.Link href={props.linkPreview} target='_blank'>
                         <FlexWrapper align={'center'} columnGap={'10px'}>
                             <Icon iconId={'link'} width={'20'} height={'20'} />
                             <span>Live Preview</span>
                         </FlexWrapper>
                     </S.Link>
-                    <S.Link href={"#"}>
+                    <S.Link href={props.linkCode} target='_blank'>
                         <FlexWrapper align={'center'} columnGap={'10px'}>
                             <Icon iconId={'projgithub'} width={'20'} height={'20'} />
                             <span>View Code</span>
