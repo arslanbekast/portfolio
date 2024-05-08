@@ -32,8 +32,21 @@ const GridWrapper = styled.div`
     grid-template-rows: repeat(6, 1fr);
   }
 `
+const StackIcon = styled.div`
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`
+const StackName = styled.span`
+    font-size: 18px;
+    font-weight: 500;
+`
 
 export const S = {
     Stack,
-    GridWrapper
+    GridWrapper,
+    StackIcon,
+    StackName
 }

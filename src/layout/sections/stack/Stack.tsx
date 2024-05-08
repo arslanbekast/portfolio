@@ -5,20 +5,22 @@ import {SectionText} from "../../../components/SectionText";
 import {Container} from "../../../components/Container";
 import {S} from './Stack_Styles';
 import {Bounce} from "react-awesome-reveal";
+import {FlexWrapper} from "../../../components/FlexWrapper";
+import {StackItem} from "./StackItem/StackItem";
 
 const techStackArr = [
-    {icon:'html',width:'120',height:'120'},
-    {icon:'css',width:'120',height:'120'},
-    {icon:'js',width:'120',height:'120'},
-    {icon:'react',width:'113',height:'101'},
-    {icon:'redux',width:'105',height:'100'},
-    {icon:'bootstrap',width:'88',height:'87'},
-    {icon:'tailwind',width:'131',height:'131'},
-    {icon:'sass',width:'117',height:'87'},
-    {icon:'git',width:'105',height:'105'},
-    {icon:'greensock',width:'120',height:'120'},
-    {icon:'vscode',width:'112',height:'112'},
-    {icon:'github',width:'88',height:'88'},
+    {name:'HTML',icon:'html',width:'120',height:'120'},
+    {name:'CSS',icon:'css',width:'120',height:'120'},
+    {name:'JS',icon:'js',width:'120',height:'120'},
+    {name:'React',icon:'react',width:'113',height:'101'},
+    {name:'Redux',icon:'redux',width:'105',height:'100'},
+    {name:'Bootstrap',icon:'bootstrap',width:'88',height:'87'},
+    {name:'Tailwind',icon:'tailwind',width:'131',height:'131'},
+    {name:'SASS',icon:'sass',width:'117',height:'87'},
+    {name:'Git',icon:'git',width:'105',height:'105'},
+    {name:'GreenSock',icon:'greensock',width:'120',height:'120'},
+    {name:'VSCode',icon:'vscode',width:'112',height:'112'},
+    {name:'Github',icon:'github',width:'88',height:'88'},
 ]
 
 export const Stack: React.FC = () => {
@@ -32,9 +34,9 @@ export const Stack: React.FC = () => {
                     <Bounce cascade={true} damping={0.05}>
                     {
                         techStackArr.map((item,i)=>{
-                            const {icon, width, height} = item;
+                            const {name, icon, width, height} = item;
                             return (
-                                <Icon key={i} iconId={icon} width={width} height={height} />
+                                <StackItem key={i} name={name} icon={icon} width={width} height={height} />
                             )
                         })
                     }
