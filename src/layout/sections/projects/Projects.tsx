@@ -15,14 +15,14 @@ const projectsArr = [
         img:cards,
         title:'Cards',
         text:'The app is designed for question-and-answer card-based learning, with the ability to create your own decks of cards or use existing sets.',
-        techStack:'HTML, Module SCSS, TypeScript, React, RTK Query, React Router Dom, Radix UI, React Hook Form',
+        techStack:'HTML, Module SCSS, TypeScript, React, RTK Query, React Router, Radix UI, React Hook Form',
         linkPreview: 'https://cards-for-study.vercel.app/',
         linkCode: 'https://github.com/MrEvgeniy1989/cards'
     },
     {
         img:todo,
         title:'Todolist',text:'The project provides convenient management of tasks and to-do lists through an intuitive interface, allowing you to create, edit, delete and view tasks and to-do lists.',
-        techStack:'HTML, Module CSS, TypeScript, React, Redux Toolkit, React Router Dom, Material UI, Formik',
+        techStack:'HTML, Module CSS, TypeScript, React, Redux Toolkit, React Router, Material UI, Formik',
         linkPreview: 'https://arslanbekast.github.io/todolist/',
         linkCode: 'https://github.com/arslanbekast/todolist'
     },
@@ -30,7 +30,7 @@ const projectsArr = [
         img:socialNetwork,
         title:'Social Network',
         text:'The project is a platform where users can register, create personal profiles, view other users\' profiles, add them as friends and chat.',
-        techStack:'HTML, Module CSS, TypeScript, React, Redux, Redux Thunk, React Router Dom, Redux Form',
+        techStack:'HTML, Module CSS, TypeScript, React, Redux, Redux Thunk, React Router, Redux Form',
         linkPreview: 'https://arslanbekast.github.io/social-network/',
         linkCode: 'https://github.com/arslanbekast/social-network'
     }
