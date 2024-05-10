@@ -13,7 +13,7 @@ export const Footer: React.FC = () => {
             <Container>
                 <S.FooterTop>
                     <FlexWrapper justify={'space-between'} align={'center'} wrap={'wrap'}>
-                        <Logo section={'footer'}/>
+                        <Logo />
                         <FlexWrapper justify={'space-between'} align={'center'} columnGap={'63px'}>
                             <a href={'tel:+79323161334'}>+7(932)316-13-34</a>
                             <a href={'mailto:astemirow@mail.ru'}>astemirow@mail.ru</a>

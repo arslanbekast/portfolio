@@ -1,21 +1,11 @@
 import React from "react";
-import logo from '../../assets/images/logo.svg'
-import {Icon} from "../icon/Icon";
+import logo from '../../assets/images/logo.png'
 import {animateScroll as scroll} from "react-scroll";
 
-type LogoPropsType = {
-    section: string
-}
-
-export const Logo: React.FC<LogoPropsType> = (props: LogoPropsType) => {
+export const Logo: React.FC = () => {
     return (
         <a onClick={() => {scroll.scrollToTop()}} style={{cursor:'pointer'}}>
-            {
-                props.section === 'header' ?
-                    <img src={logo} alt="logo"/> :
-                    <Icon iconId={'footerLogo'} width={'97'} height={'59'}/>
-            }
-
+            <img src={logo} alt="logo"/>
         </a>
     );
 };

@@ -22,7 +22,7 @@ export const Header: React.FC = () => {
         <S.Header>
             <Container>
                 <FlexWrapper justify={'space-between'} align={'center'}>
-                    <Logo section={'header'}/>
+                    <Logo />
                     <FlexWrapper justify={'flex-end'} align={'center'} columnGap={'50px'}>
                         {width > breakpoint ? <DesktopMenu /> :
                                               <MobileMenu />}
