@@ -16,7 +16,7 @@ const techStackArr = [
     {name:'React',icon:'react',width:'113',height:'101'},
     {name:'Redux',icon:'redux',width:'105',height:'100'},
     {name:'Redux Thunk',icon:'redux',width:'105',height:'100'},
-    {name:'Redux Saga',icon:'redux',width:'105',height:'100'},
+    {name:'Redux Saga',icon:'reduxSaga',width:'105',height:'100'},
     {name:'Redux Toolkit',icon:'redux',width:'105',height:'100'},
     {name:'RTK Query',icon:'redux',width:'105',height:'100'},
     {name:'React Router',icon:'rr',width:'120',height:'120'},
