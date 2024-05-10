@@ -5,21 +5,30 @@ import {SectionText} from "../../../components/SectionText";
 import {Container} from "../../../components/Container";
 import {S} from './Stack_Styles';
 import {Bounce} from "react-awesome-reveal";
-import {FlexWrapper} from "../../../components/FlexWrapper";
 import {StackItem} from "./StackItem/StackItem";
 
 const techStackArr = [
     {name:'HTML',icon:'html',width:'120',height:'120'},
     {name:'CSS',icon:'css',width:'120',height:'120'},
-    {name:'JS',icon:'js',width:'120',height:'120'},
+    {name:'SASS',icon:'sass',width:'117',height:'87'},
+    {name:'JavaScript',icon:'js',width:'120',height:'120'},
+    {name:'TypeScript',icon:'ts',width:'120',height:'120'},
     {name:'React',icon:'react',width:'113',height:'101'},
     {name:'Redux',icon:'redux',width:'105',height:'100'},
-    {name:'Bootstrap',icon:'bootstrap',width:'88',height:'87'},
-    {name:'Tailwind',icon:'tailwind',width:'131',height:'131'},
-    {name:'SASS',icon:'sass',width:'117',height:'87'},
+    {name:'Redux Thunk',icon:'redux',width:'105',height:'100'},
+    {name:'Redux Saga',icon:'redux',width:'105',height:'100'},
+    {name:'Redux Toolkit',icon:'redux',width:'105',height:'100'},
+    {name:'RTK Query',icon:'redux',width:'105',height:'100'},
+    {name:'React Hook Form',icon:'rhf',width:'120',height:'120'},
+    {name:'Formik',icon:'formik',width:'120',height:'120'},
+    {name:'Storybook',icon:'storybook',width:'120',height:'120'},
+    {name:'Postman',icon:'postman',width:'120',height:'120'},
+    {name:'Axios',icon:'axios',width:'120',height:'120'},
+    {name:'REST API',icon:'rest',width:'120',height:'120'},
+    {name:'Styled Components',icon:'styledComponents',width:'120',height:'120'},
+    {name:'Material UI',icon:'mui',width:'120',height:'120'},
+    {name:'Unit Testing',icon:'unit',width:'120',height:'120'},
     {name:'Git',icon:'git',width:'105',height:'105'},
-    {name:'GreenSock',icon:'greensock',width:'120',height:'120'},
-    {name:'VSCode',icon:'vscode',width:'112',height:'112'},
     {name:'Github',icon:'github',width:'88',height:'88'},
 ]
 

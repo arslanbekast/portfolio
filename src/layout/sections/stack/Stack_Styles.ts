@@ -21,7 +21,7 @@ const GridWrapper = styled.div`
   justify-items: center;
   align-items: center;
   justify-content: space-between;
-  row-gap: 95px;
+  row-gap: 50px;
 
   @media ${theme.media.tablet} {
     grid-template-columns: repeat(4, 1fr);
