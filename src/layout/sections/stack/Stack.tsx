@@ -19,6 +19,7 @@ const techStackArr = [
     {name:'Redux Saga',icon:'redux',width:'105',height:'100'},
     {name:'Redux Toolkit',icon:'redux',width:'105',height:'100'},
     {name:'RTK Query',icon:'redux',width:'105',height:'100'},
+    {name:'React Router',icon:'rr',width:'120',height:'120'},
     {name:'React Hook Form',icon:'rhf',width:'120',height:'120'},
     {name:'Formik',icon:'formik',width:'120',height:'120'},
     {name:'Storybook',icon:'storybook',width:'120',height:'120'},
