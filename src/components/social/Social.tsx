@@ -10,7 +10,7 @@ type SocialPropsType = {
 
 const socialData = [
     {iconId: "socgithub", href:"https://github.com/arslanbekast"},
-    {iconId: "twitter", href:"https://twitter.com"},
+    {iconId: "codewars", href:"https://www.codewars.com/users/arslanbek-astemirov"},
     {iconId: "linkedin",  href:"https://www.linkedin.com/in/arslanbek-astemirov"},
 ]
 
