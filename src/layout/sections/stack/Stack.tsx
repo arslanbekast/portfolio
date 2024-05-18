@@ -29,6 +29,7 @@ const techStackArr = [
     {name:'Styled Components',icon:'styledComponents',width:'120',height:'120'},
     {name:'Material UI',icon:'mui',width:'120',height:'120'},
     {name:'Unit Testing',icon:'unit',width:'120',height:'120'},
+    {name:'TDD',icon:'tdd',width:'120',height:'120'},
     {name:'Git',icon:'git',width:'105',height:'105'},
     {name:'Github',icon:'github',width:'88',height:'88'},
 ]
