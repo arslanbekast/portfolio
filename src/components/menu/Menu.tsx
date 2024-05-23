@@ -5,7 +5,8 @@ type MenuPropsType = {
     fontColor?: string,
     hoverColor?: string,
     fontSize?: string,
-    fontWeight?: string
+    fontWeight?: string,
+    closeMenu?: () => void
 }
 
 const menuItems = [
@@ -30,6 +31,7 @@ export const Menu: React.FC<MenuPropsType> = (props:MenuPropsType) => {
                             smooth={true}
                             activeClass="active"
                             spy={true}
+                            onClick={props.closeMenu}
                             offset={-10}>
                             {item.title}
                         </S.MenuLink>
